@@ -1,0 +1,70 @@
+symbol,model_response,input_tokens,output_tokens,estimated_cost_usd,query_time_sec
+eyewash_station,"The image displays a maritime fire plan with symbols indicating the location of safety equipment. I have scanned the ""Main Deck"" and ""Lower Deck"" plans for the 'eyewash_station' symbol (a green square with a white eye, water spray, and a cross).
+
+1.  **Main Deck:** I scanned the symbols along the top and bottom perimeters. While there are green symbols for escape hatches, first aid, and muster stations, there is no eyewash station symbol.
+2.  **Lower Deck:** Scanning the row of symbols above the plan, specifically in the cluster corresponding to the engine room (the yellow hatched area):
+    *   There is a symbol showing a hose reel.
+    *   Next to it is a symbol for a fixed fire extinguishing system.
+    *   **Found:** The third symbol in this group is the **eyewash station** symbol. It is a green square depicting an eye with water spraying upwards and a white cross.
+    *   Next to it is a safety shower symbol (a person under a shower).
+    *   Scanning the rest of the Lower Deck symbols (bottom row and remaining top row), I see no other instances.
+
+The count is 1.
+
+```json
+{""symbol"":""eyewash_station"",""count"":1}
+```",2262,273,0.0078,19.656
+fire_hydrant,"Based on the visual analysis of the maritime fire plan images:
+
+1.  **Analyze the Query Symbol:** The query symbol is a fire control symbol representing a **""fire_hydrant""**. It is characterized by a ""bowtie"" valve shape with a red triangle on the left and a green triangle on the right. It features a vertical ""pipe"" line on the left side and a ""T"" shape on top surmounted by the letter **""W""**.
+
+2.  **Analyze the Target Image:** The target image displays the ""Main Deck"" and ""Lower Deck"" plans of a vessel. The symbols are located in rows above and below the deck plans, with leader lines pointing to their locations.
+    *   **Main Deck:** Scanning the top row of symbols from left to right, there is **one** instance of this symbol on the starboard side (top edge of the diagram), roughly amidships above the dining area. It matches the shape (valve with 'W'), though the right triangle appears white rather than green (likely a diagrammatic variation where 'white' or 'empty' represents the same status as green in the standard symbol, or simply a printing choice).
+    *   **Lower Deck:** Scanning the top row of symbols from left to right:
+        *   At the far left (aft section), there are **two** instances of the 'W' valve symbol side-by-side.
+        *   Moving forward to the area above the guest cabins, there is **one** instance above the twin cabin area.
+        *   Moving further forward above the VIP/Master cabin area, there is **one** instance.
+    *   **Other Areas:**
+        *   The bottom row of the Main Deck has a plain valve (red/white) without the 'W', which is a different symbol.
+        *   The bottom row of the Lower Deck has an 'S' valve (red/orange), which is a different symbol.
+        *   No other matches were found.
+
+3.  **Conclusion:** There are 5 instances of the ""W"" fire hydrant valve symbol in the plan. Although the right-hand triangle in the target image appears white/empty compared to the green in the query, the complex geometry (pipe, bowtie, T-handle) and the specific ""W"" label confirm they represent the same ""fire_hydrant"" object class.
+
+*   **Main Deck:** 1 instance (Top row)
+*   **Lower Deck:** 4 instances (Top row)
+
+**Total Count:** 5
+
+```json
+{""symbol"":""fire_hydrant"",""count"":5}
+```",2260,549,0.011108,110.015
+fire_main_suction_valve,"Based on the visual analysis of the provided maritime fire plan, here is the count for the query symbol `fire_main_suction_valve` (characterized by a bowtie valve shape with a red left triangle, green/teal right triangle, and the letter 'W' on top):
+
+1.  **Main Deck:** There is **1** match located in the top row of symbols, roughly in the middle, connected to the starboard side deck area.
+2.  **Lower Deck:** There is **1** match located in the top row of symbols on the far left (above the garage area). It is the left symbol in a pair of two adjacent valve symbols (the one to its right has the colors reversed).
+
+Other similar symbols on the plan (such as those on the bottom row of the Main Deck or the other valves on the Lower Deck) have the color configuration reversed (Green-Left, Red-Right) and are therefore not counted as exact matches to the query symbol.
+
+**JSON Result:**
+```json
+{""symbol"":""fire_main_suction_valve"",""count"":2}
+```",2265,230,0.00729,85.726
+lifejacket,"Based on the visual analysis of the provided maritime fire plan, here are the findings:
+
+1.  **Main Deck, Top Row:** There is **1** instance of the lifejacket symbol located towards the right side of the row, indicated with a subscript '2'.
+2.  **Lower Deck, Top Row:** There are **3** instances of the lifejacket symbol. One is above the aft port cabin, one above the forward port cabin, and one at the far right (bow) representing the crew area (indicated with a subscript '6').
+3.  **Lower Deck, Bottom Row:** There are **2** instances of the lifejacket symbol. One is below the aft starboard cabin and one is below the forward starboard cabin.
+
+Total count: 1 + 3 + 2 = 6.
+
+```json
+{""symbol"":""lifejacket"",""count"":6}
+```",2259,185,0.006738,48.403
+sprinkler_suction_valve,"Based on the visual analysis of the provided maritime fire plan, I have found the query symbol (`sprinkler_suction_valve`) appearing **1** time.
+
+It is located in the upper row of symbols for the ""Lower Deck"" plan, near the left (aft) side, situated between a red square with a question mark and a red square symbol representing a fire hose.
+
+```json
+{""symbol"":""sprinkler_suction_valve"",""count"":1}
+```",2260,99,0.005708,21.093

@@ -1,0 +1,21 @@
+# Environment variables
+.env
+
+# Virtual environments
+.venv/
+venv/
+
+# GroundingDINO (vendor / model code)
+GroundingDINO/
+
+# Python cache
+__pycache__/
+*.pyc
+.cache/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
